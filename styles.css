@@ -7,6 +7,22 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Skip-to-content link (hidden until focused) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #444;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 0;
+}
+
 /* Header styles */
 header {
     background-color: #333;
@@ -14,6 +30,19 @@ header {
     text-align: center;
     padding: 30px 0;
     position: relative;
+}
+
+/* Home link in header */
+header .home-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .home-link:hover {
+    text-decoration: underline;
 }
 
 header .headshot {
@@ -63,10 +92,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.2s ease; /* smooth hover transition */
 }
 
 nav ul li a:hover {
     background-color: #555;
+}
+
+/* Main spacing (below nav) */
+main {
+    margin-top: 10px;
 }
 
 /* Section styles */
@@ -85,6 +120,13 @@ section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 15px;
+}
+
+/* Ensure consistent heading hierarchy in Education */
+section#education h3 {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 15px;
 }
 
 section h3 {
@@ -119,6 +161,13 @@ ul li a:hover {
 
 #skills ul li {
     margin-bottom: 5px;
+}
+
+/* Publications keywords styling */
+.keywords {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
 }
 
 /* Contact section styles */
