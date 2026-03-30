@@ -3,30 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ricardo Frumento - Curriculum Vitae">
-    <meta name="keywords" content="CV, Resume, Robotics, Computer Science, Ricardo Frumento">
-    <title>Curriculum Vitae | Ricardo Frumento</title>
+    <title>CV | Ricardo Frumento</title>
+    <meta name="description" content="Curriculum Vitae of Ricardo Frumento.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Curriculum Vitae</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Back to Main Page</a></li>
-            </ul>
-        </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">Ricardo Frumento</a>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="cv-content">
-        <iframe src="resume.pdf" width="100%" height="600px"></iframe>
-        <p>
-            <a href="resume.pdf" download>Download CV (PDF)</a>
-        </p>
-    </section>
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container narrow">
+                <p class="eyebrow">Curriculum Vitae</p>
+                <h1>CV and professional background</h1>
+                <p class="intro">
+                    You can read my CV below or download the PDF directly.
+                </p>
+                <div class="inline-actions">
+                    <a class="button button-primary" href="resume.pdf" download>Download CV</a>
+                    <a class="button button-secondary" href="index.html">Back to home</a>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Ricardo Frumento</p>
+        <section class="section">
+            <div class="container">
+                <iframe src="resume.pdf" class="cv-frame" title="Ricardo Frumento CV"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Ricardo Frumento</p>
+        </div>
     </footer>
 </body>
 </html>
