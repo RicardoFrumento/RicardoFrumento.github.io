@@ -302,14 +302,6 @@ a:hover {
     background: #fff;
 }
 
-iframe.cv-frame {
-    width: 100%;
-    height: 760px;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    background: #fff;
-}
-
 .tag-list {
     display: flex;
     flex-wrap: wrap;
@@ -331,11 +323,65 @@ iframe.cv-frame {
     font-weight: 700;
 }
 
+.cv-snapshot {
+    display: grid;
+    gap: 14px;
+}
+
+.cv-snapshot-item {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.35fr) 1fr;
+    gap: 18px;
+    align-items: start;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.cv-snapshot-item span {
+    color: var(--muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+}
+
+.cv-snapshot-item strong {
+    font-size: 1.02rem;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.skill-group {
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.skill-group h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.skill-group p {
+    margin: 0;
+    color: var(--muted);
+}
+
 @media (max-width: 900px) {
     .hero-grid,
     .three-up,
     .two-up,
-    .focus-list {
+    .focus-list,
+    .skill-grid {
         grid-template-columns: 1fr;
     }
 
@@ -363,5 +409,10 @@ iframe.cv-frame {
     .button {
         width: 100%;
         text-align: center;
+    }
+
+    .cv-snapshot-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 }
